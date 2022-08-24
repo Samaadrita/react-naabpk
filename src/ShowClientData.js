@@ -4,7 +4,7 @@ export default function ShowClientData(props) {
   const clients = props.clients;
   return (
     <>
-      {clients.forEach((item) => (
+      {clients.map((item) => (
         <div>
           <div>Client ID</div>
           <div>Informations</div>

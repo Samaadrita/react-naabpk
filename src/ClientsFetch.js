@@ -17,7 +17,6 @@ export default function ClientsFetch() {
     };
     fetchData();
   }, []);
-  // console.log(clients);
   return clients?.length > 0 ? (
     <ShowClientData clients={clients} />
   ) : (
