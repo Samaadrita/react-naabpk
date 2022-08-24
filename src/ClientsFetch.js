@@ -10,6 +10,12 @@ export default function ClientsFetch() {
     );
     return clientsApi.data;
   };
+  // const fetchAccounts = async () => {
+  //   const clientsApi = await axios.get(
+  //     'https://mighty-oasis-32829.herokuapp.com/api/clients'
+  //   );
+  //   return clientsApi.data;
+  // };
   useEffect(() => {
     const fetchData = async () => {
       let response = await fetchClients();
