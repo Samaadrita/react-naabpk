@@ -2,10 +2,9 @@ import React from 'react';
 
 export default function ShowClientData(props) {
   const clients = props.clients;
-  const showClients = () => {
-    clients.forEach((item) => {
-      console.log(item);
-      return (
+  return (
+    <>
+      {clients.forEach((item) => (
         <div>
           <div>Client ID</div>
           <div>Informations</div>
@@ -16,9 +15,7 @@ export default function ShowClientData(props) {
           <div>Last Name</div>
           <span>{item?.name}</span>
         </div>
-      );
-    });
-  };
-
-  return <>{showClients()}</>;
+      ))}
+    </>
+  );
 }
